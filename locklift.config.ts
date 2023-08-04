@@ -26,12 +26,12 @@ const config: LockliftConfig = {
     // path: "/mnt/o/projects/broxus/TON-Solidity-Compiler/build/solc/solc",
 
     // Or specify version of compiler
-    version: "0.62.0",
+    version: "0.61.2",
 
     // Specify config for extarnal contracts as in exapmple
     externalContracts: {
-      "node_modules/@broxus/tip4/precompiled": ['Index', 'IndexBasis']
-    }
+      "node_modules/@broxus/tip4/precompiled": ["Index", "IndexBasis"],
+    },
   },
   linker: {
     // Specify path to your stdlib
@@ -61,9 +61,9 @@ const config: LockliftConfig = {
         address: "0:ece57bcc6c530283becbbd8a3b24d3c5987cdddc3c8b7b33be6e4a6312490415",
         key: "172af540e43a524763dd53b26a066d472a97c4de37d5498170564510608250c3",
       },
-      tracing: {
-        endpoint: LOCAL_NETWORK_ENDPOINT,
-      },
+      // tracing: {
+      //   endpoint: LOCAL_NETWORK_ENDPOINT,
+      // },
       keys: {
         // Use everdev to generate your phrase
         // !!! Never commit it in your repos !!!
@@ -86,9 +86,9 @@ const config: LockliftConfig = {
         address: "0:0000000000000000000000000000000000000000000000000000000000000000",
         key: "secret key",
       },
-      tracing: {
-        endpoint: DEV_NET_NETWORK_ENDPOINT,
-      },
+      // tracing: {
+      //   endpoint: DEV_NET_NETWORK_ENDPOINT,
+      // },
       keys: {
         // Use everdev to generate your phrase
         // !!! Never commit it in your repos !!!
@@ -110,9 +110,9 @@ const config: LockliftConfig = {
         phrase: "phrase",
         accountId: 0,
       },
-      tracing: {
-        endpoint: VENOM_TESTNET_TRACE_ENDPOINT,
-      },
+      // tracing: {
+      //   endpoint: VENOM_TESTNET_TRACE_ENDPOINT,
+      // },
       keys: {
         // Use everdev to generate your phrase
         // !!! Never commit it in your repos !!!
@@ -137,9 +137,9 @@ const config: LockliftConfig = {
         address: "0:0000000000000000000000000000000000000000000000000000000000000000",
         key: "secret key",
       },
-      tracing: {
-        endpoint: MAIN_NET_NETWORK_ENDPOINT,
-      },
+      // tracing: {
+      //   endpoint: MAIN_NET_NETWORK_ENDPOINT,
+      // },
       keys: {
         // Use everdev to generate your phrase
         // !!! Never commit it in your repos !!!

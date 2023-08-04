@@ -1,0 +1,16 @@
+{
+  "type": "Collectibles",
+  "name": "Venom Ape Yatch Club",
+  "description": "Just a test collection",
+  "preview": {
+    "source": "https://example.com/image",
+    "mimetype": "image/jpeg"
+  },
+  "files": [
+    {
+      "source": "https://example.com/file/image",
+      "mimetype": "image/jpeg"
+    }
+  ],
+  "external_url": "example.com"
+}

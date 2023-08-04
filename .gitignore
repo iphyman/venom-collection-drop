@@ -8,3 +8,5 @@ locklift.config.js
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+build/
+migration-log.json
