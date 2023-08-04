@@ -17,6 +17,7 @@ contract ColletionDrop is TIP4_2Collection, TIP4_3Collection, IBurnableCollectio
   uint64 static nonce_;
 
   uint8 constant value_is_less_than_required = 104;
+  uint8 constant account_minted_already = 105;
 
   uint128 _remainOnNft;
   uint256 _totalMinted;
@@ -50,6 +51,7 @@ contract ColletionDrop is TIP4_2Collection, TIP4_3Collection, IBurnableCollectio
   }
 
   function mint(string _json) public virtual {
+    require(!_minted[msg.sender], account_minted_already);
     require(msg.value > _remainOnNft + _mintingFee + _indexDeployValue * 2 + 0.3 ever, value_is_less_than_required);
 
     tvm.rawReserve(_mintingFee, 4);
